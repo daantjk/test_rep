@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <style>
+        .circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+
+            border: 10px solid transparent;
+            border-left: 10px solid tomato;
+            border-top: 10px solid tomato;
+            border-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .pointer {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100px;
+            width: 10px;
+
+            background-color: cornflowerblue;
+            transform-origin: left bottom;
+            transform: rotate(-45deg) translateX(-50%);
+        }
+    </style>
+    <div class="circle">
+        <span class="pointer"></span>
+    </div>
+
+
+
+</body>
